@@ -5,7 +5,7 @@ body{
      line-height: 1.25;
      background-attachment: scroll;
      background-repeat: repeat;
-     background-image: url(https://github.com/tahirmama351/tahirmama351.github.io/blob/master/silverware.jpg);
+     background-image: url(https://github.com/tahirmama351/tahirmama351.github.io/silverware.jpg);
 }
 
 h1{
@@ -34,6 +34,9 @@ pre{
 }
 img{
      margin-left:10px;
+}
+ul{
+     list-style-image: url(pie_icon.gif);
 }
 
 
