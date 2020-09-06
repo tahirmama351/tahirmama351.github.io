@@ -3,6 +3,9 @@ body{
      margin-right:20px;
      background-color: rgb(210, 224, 185);
      line-height: 1.25;
+     background-attachment: scroll;
+     background-repeat: repeat;
+     background-image: url(https://github.com/tahirmama351/tahirmama351.github.io/blob/master/silverware.jpg);
 }
 
 h1{
