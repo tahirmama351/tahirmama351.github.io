@@ -1,1 +1,0 @@
-console.log(Math.isfinite(6))
