@@ -1,9 +1,13 @@
-
-let prompt = require('prompt-sync')();
+'use strict';
+/**
+ * Event handler to display library titles sorted alphabetically
+ * @returns {"number"}
+ * @nun1 {"number"}
+ * @nun2 {"number"}
+ */
 
 let calculator = {
-
-     read() {
+     read(){
           this.num1 = +prompt('num1: ', 0);
           this.num2 = +prompt('num2: ', 0);
      },

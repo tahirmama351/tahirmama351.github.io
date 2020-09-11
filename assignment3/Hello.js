@@ -1,5 +1,9 @@
 
-
+"use strict";
+/**
+ * Event handler to display library titles sorted alphabetically
+ * @returns {"stritng"} 
+ */
 let user = {};
 
 user.name = "John";

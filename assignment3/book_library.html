@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+    <script src="assignment3\book_library.js"></script>
+</head>
+
+<body>
+    
+        Book Title
+        <br />
+        <input type="text" id="title" size="100" /> <br>
+        Book author
+        <br />
+        <input type="text" id="author" size="100" /><br>
+        Book library id
+        <br />
+        <input type="text" id="id" size="100" /><br>
+
+  <button type="button" onclick="bookLibrary()">show book library</button>
+  <button type="button" onmouseover="showTitles()">show book title</button>
+  <button type="button" onmouseover="ShowAothor()">show book aouthor</button>
+  <button type="button" onmouseover="libraryId()">show book id</button>
+
+    <input type="button" value="Show titles" id="titlesBtn" onclick="showTitles();"/><br>
+<p id="display"></p>
+    <p>
+        <textarea id="displayArea" rows="10" cols="80"></textarea>
+    </p>
+
+</body>
+
+</html>
+
+

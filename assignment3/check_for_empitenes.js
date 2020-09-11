@@ -1,5 +1,9 @@
-
-
+"use strict";
+/**
+ * Event handler to display library titles sorted alphabetically
+ * @returns {boolean}
+ 
+ */
 
 function isEmpty() {
      for (let key in schedule) {
