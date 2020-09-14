@@ -1,3 +1,5 @@
+"use strict"
+
 function longestWord(arr){
      let maxWordLength = -Infinity;
      for(i=0; i<arr.length; i++){
