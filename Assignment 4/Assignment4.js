@@ -25,10 +25,6 @@ function sum(num1, num2) {
 // let lnum = prompt("Enter the second number: ");
 // sum(fnum, lnum);
 
-/////////// Repeat until the input is a numbeer
-
-
-//numberFronUser();
 
 //////////// an ocational infinite loop
 
@@ -68,33 +64,9 @@ function randomNum(min, max) {
      let random = Math.floor(min + Math.random() * (max - min));
      return random;
 }
-//randomNum(3, 9);
-
-/////// Extract the number
-
-//extractNumber("$56")
-
-//////           maximal subarray
 
 
 
 
-// let  arr = [1,-5,23,6,-1] 
-// let result = getMaxSubSum(arr)
-// console.log(result);
 
-////////////// 
 
-/**
- * @param{string} the input must be string.
- * @returns{number} the return expexted to be number.
- */
-function camelCase(str){
-     str = str.toLowerCase();
-    let splitedString = str.split("-")
-    
-  let newArrStr =  splitedString.map((word, index)=> index===0 ? word: word[0].toUpperCase() + word.slice(1));
-  let newStr = newArrStr.join('');
-  return newStr;
-}
-//console.log(camelCase("tahir-mama"))

@@ -5,5 +5,4 @@ describe("extractNumber", function() {
        assert.strictEqual(extractNumber('$120'), 120);
      });
    
-   
    });
