@@ -2,6 +2,8 @@
 /* global assert */
 {
   // eslint-disable-next-line require-jsdoc
+
+
   function getLocalDay(date) {
 
     let day = date.getDay();
@@ -14,6 +16,8 @@
   }
   let date = new Date(2020, 8, 29);
   console.log(getLocalDay(date));
+
+  
 
   ////////////////////////////
 

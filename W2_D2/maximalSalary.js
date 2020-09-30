@@ -2,6 +2,8 @@
 /* global assert */
 {
   // eslint-disable-next-line require-jsdoc
+
+
   function topSalary(salaries) {
 
     let max = 0;
@@ -25,6 +27,8 @@
 
   let topPaidName = topSalary(salaries)
   console.log(topPaidName)
+
+  ///////////////////////
 
   describe("topSalary", function () {
     it("returns top-paid person", function () {

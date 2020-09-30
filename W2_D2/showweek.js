@@ -2,6 +2,8 @@
 /* global assert */
 {
   // eslint-disable-next-line require-jsdoc
+
+
   function getWeekDay(date) {
     let weekDays = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
 
@@ -12,6 +14,8 @@
   console.log(getWeekDay(date))
 
 
+  //////////////////////////////////////
+  
 
   describe("getWeekDay", function () {
     it("3 January 2014 - friday", function () {

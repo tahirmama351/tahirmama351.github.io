@@ -2,6 +2,9 @@
 /* global assert */
 {
   // eslint-disable-next-line require-jsdoc
+
+
+
   function getDateAgo(date, days) {
     date.setDate(date.getDate() - days);
     return date.getDate();
@@ -9,6 +12,9 @@
   //let date = new Date()
   //console.log(getDateAgo(date,6))
 
+
+
+  
 
   describe("getDateAgo", function () {
 
