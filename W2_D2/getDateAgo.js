@@ -9,12 +9,12 @@
     date.setDate(date.getDate() - days);
     return date.getDate();
   }
-  //let date = new Date()
-  //console.log(getDateAgo(date,6))
+  let date = new Date()
+  console.log(getDateAgo(date,6))
 
 
 
-  
+
 
   describe("getDateAgo", function () {
 
