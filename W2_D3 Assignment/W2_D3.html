@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <!-- add mocha css, to show results -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+     <!-- add mocha framework code -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+     <script>
+          mocha.setup('bdd'); // minimal setup
+     </script>
+     <!-- add chai -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+     <script>
+          // chai has a lot of stuff, let's make assert global
+          let assert = chai.assert;
+     </script>
+</head>
+
+<body>
+     <p>Array method practice: </p>
+     <p style="margin-left: 50px">
+          <a href="doubleNumber.js">doubleNumber</a> <br />
+          <a href="doubleAge.js"> doubleAge</a><br />
+          <a href="filterEven.js"> filter even number</a><br />
+          <a href="filterAge.js"> filter Age > 10</a><br />
+          <a href="findSum.js"> find Sum of array element</a><br />
+          <a href="averageOfNumbers.js"> average Of Numbers</a><br />
+          <a href="muxOfNumber.js"> mux Of Number</a><br />
+          <a href="maximumAge.js"> maximum Age</a><br />
+
+     </p>
+     <p> Recursion</p>
+     <p style="margin-left: 50px">
+          <a href="sumNumber.js"> sum Number</a><br />
+          <a href="factorial.js"> factorial</a><br />
+          <a href="fabonacci.js"> fabonacci number</a><br />
+          <a href="output_singl_list.js"> output singl list</a><br />
+          <a href=""></a>
+     </p>
+
+     <!-- the element with id="mocha" will contain test results -->
+     <div id="mocha"></div>
+
+     <!-- run tests! -->
+     <script>
+          mocha.run();
+     </script>
+</body>
+
+</html>
