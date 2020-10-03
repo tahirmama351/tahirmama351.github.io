@@ -21,7 +21,7 @@ maggie.next = null;
 function contains(list, target) {
 
      if (list.value === target) {
-          return list
+          return list.next
      } else {
           if (list.next === null) {
                return "done"

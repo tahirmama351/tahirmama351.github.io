@@ -11,22 +11,25 @@ const bart = new TreeNode('Bart');
 const lisa = new TreeNode('Lisa');
 const maggie = new TreeNode('Maggie');
 // associate root with is descendents
-abe.next.push(homer);
-homer.next.push(bart, lisa, maggie);
+abe.descendents.push(homer);
+homer.descendents.push(bart, lisa, maggie);
 
 
 
 function contains(node, target) {
      
      if (node.value === target) {
-          return node;
+         return node;
 
      } else { 
-          let childResult;
-
-          for (let child of node.descendents) {
-               childResult = contains(child, target);
-               return child;
+          
+          for (let child in node) {
+               if(child.value === target){
+                     return child.descendents;
+               }else {
+                contains(child.descendents, target);
+               }             
+               
           }
      }
      return target +" is not in this root"
@@ -34,4 +37,4 @@ function contains(node, target) {
 }
 
 
-console.log( contains(maggie, "Lisa"));
+console.log( contains(abe, "Lisa"));
