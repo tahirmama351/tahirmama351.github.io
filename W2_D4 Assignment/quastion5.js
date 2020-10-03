@@ -26,7 +26,7 @@ function contains(list, target) {
                if (key.value === target) {
                     return key
                }
-               contains(key)
+               contains(key.next)
           }
 
 
