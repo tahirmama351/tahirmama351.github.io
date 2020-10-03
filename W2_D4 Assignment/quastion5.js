@@ -19,14 +19,15 @@ lisa.next = maggie;
 maggie.next = null;
 
 function contains(list, target) {
-     if (list.next === null) {
-          return list
-     } else if (list.next) {
 
-          if (list.value === target) {
-               return list
-          }
-          contains(list.next)
+     if (list.value === target) {
+          return list
+     } else {
+          if (list.next === null) {
+               return "done"
+               // } else {
+               //      
+               // }
+          } contains(list.next)
      }
-}
-console.log(contains(list, "Lisa"));
+     console.log(contains(list, "Lisa"));
