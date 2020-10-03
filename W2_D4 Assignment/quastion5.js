@@ -20,18 +20,13 @@ maggie.next = null;
 
 function contains(list, target) {
      if (list.next === null) {
-          return "done"
+          return list
      } else if (list.next) {
-          for (let key in list) {
-               if (key.value === target) {
-                    return key
-               }
-               contains(key.next)
+
+          if (list.value === target) {
+               return list
           }
-
-
+          contains(list.next)
      }
-
 }
-
 console.log(contains(list, "Lisa"));
