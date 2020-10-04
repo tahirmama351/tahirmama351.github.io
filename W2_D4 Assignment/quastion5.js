@@ -21,13 +21,13 @@ maggie.next = null;
 function contains(list, target) {
 
      if (list.value === target) {
-          return list.next
+          return list
      } else {
           if (list.next === null) {
-               return "done"
-               // } else {
-               //      
-               // }
-          } contains(list.next)
+               return`${target} is not in this tree.`;
+          } else {
+               return contains(list.next, target)
+          }
      }
-     console.log(contains(list, "Lisa"));
+}
+console.log(contains(maggie, "Lisa"));
