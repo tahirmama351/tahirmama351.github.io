@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <!-- add mocha css, to show results -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+     <!-- add mocha framework code -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+     <script>
+          mocha.setup('bdd'); // minimal setup
+     </script>
+     <!-- add chai -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+     <script>
+          // chai has a lot of stuff, let's make assert global
+          let assert = chai.assert;
+     </script>
+</head>
+
+<body>
+     <p>Recursion practice: </p>
+     <p style="margin-left: 50px">
+          <a href="printOutTheTree.js">print Out The Tree</a> <br />
+          <a href="quastion1.js"> question1</a><br />
+          <a href="quastion2.js"> question2</a><br />
+          <a href="quastion3.js"> question3</a><br />
+          <a href="quastion4.js"> question4</a><br />
+          <a href="quastion5.js"> question5</a><br />
+          <a href="quastion6.js"> question6</a><br />
+          <a href="quastion7.js"> question7</a><br />
+     </p>
+
+     <!-- the element with id="mocha" will contain test results -->
+     <div id="mocha"></div>
+
+     <!-- run tests! -->
+     <script>
+          mocha.run();
+     </script>
+</body>
+
+</html>
