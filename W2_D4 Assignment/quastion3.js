@@ -15,26 +15,26 @@ abe.descendents.push(homer);
 homer.descendents.push(bart, lisa, maggie);
 
 
-
 function contains(node, target) {
-     
-     if (node.value === target) {
-         return node;
-
-     } else { 
-          
-          for (let child in node) {
-               if(child.value === target){
-                     return child.descendents;
-               }else {
-                contains(child.descendents, target);
-               }             
-               
+     /* base case -- if children is null or empty */
+     if (node.descendents === null) {
+          if (node.value === target) {
+               return node;
+          } else {
+               return "done";
           }
+     } else { //reductive recursion step
+          let childResult = null;
+          if (node.value === target) {
+               return node;
+          }
+          for (let child  of node.descendents) {
+               childResult = contains(child, target);
+               // if (childResult === true) {
+               //      return child;
+               // }
+          }
+          return child; //did not find the target 
      }
-     return target +" is not in this root"
-     
 }
-
-
-console.log( contains(abe, "Lisa"));
+console.log(contains(homer, "Lisa"));
