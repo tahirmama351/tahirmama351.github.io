@@ -10,5 +10,6 @@ let usersMapped = users.map(user => ({
 }));
 
 
-console.log( usersMapped[0].id ); 
-console.log( usersMapped[0].fullName );
+console.log( usersMapped[2].id ); 
+console.log( usersMapped[2].fullName );
+console.log(usersMapped)
