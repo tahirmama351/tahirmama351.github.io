@@ -45,3 +45,9 @@ askPassword(function () { user.loginOk, call(user) }, function () { user.loginFa
 askPassword(function () { user.loginOk.apply(user) }, function () { user.loginFail.apply(user) })
 
 
+/**
+ * if we apply, call with out wrapping like this
+ * askPassword( user.loginOk, call(user) ,  user.loginFail.call(user) ); chack what will happen
+ */
+//
+askPassword( user.loginOk.call(user) ,  user.loginFail.call(user) )//. if it is on the browser it alart login first and faild to log in then error undefined. it it is on node it is error not define 
