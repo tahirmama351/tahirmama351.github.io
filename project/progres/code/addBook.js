@@ -1,4 +1,7 @@
-
+/**
+     * Function to add books to the given url
+     * 
+ */
 let newBook = document.getElementById("save");
 if (newBook) {
     newBook.addEventListener("click", addBook);
@@ -19,7 +22,6 @@ async function addBook() {
         "publisher": publisher,
         "datePublished": datePublished
     }
-
     const resp = await fetch("https://elibraryrestapi.herokuapp.com/elibrary/api/book/add", {
         method: "POST",
         body: JSON.stringify(data),
@@ -33,7 +35,6 @@ async function addBook() {
     setTimeout(_ => {
         location.replace("addBook.html")
     }, 2000)
-
 };
 
 

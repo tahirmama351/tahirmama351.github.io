@@ -1,3 +1,8 @@
+/**
+     * Function to fech books from the given url
+     * 
+ */
+
 fetchLibraryBooks()
 function fetchLibraryBooks() {
      fetch("https://elibraryrestapi.herokuapp.com/elibrary/api/book/list", { method: 'GET' })
@@ -20,8 +25,8 @@ function fetchLibraryBooks() {
                               <td> ${result[i].overdueFee}</td>
                               <td> ${result[i].publisher}</td>
                               <td> ${result[i].datePublished}</td> 
-                              <td><a href="#child4">edit</a></td>
-                         <td><a href="#child4">delete</a></td>                             
+                              <td><a href="editBook.html">edit</a></td>                         
+                              <td><button id="delete" onclick="deletBook(${result[i].bookId})">delete</button></td>            
                           </tr>`
                          console.log(result)
                          table.innerHTML += tableRow
@@ -30,3 +35,4 @@ function fetchLibraryBooks() {
 
           }).catch(error => { console.log(error) })
 }
+ 
