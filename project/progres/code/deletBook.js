@@ -2,9 +2,9 @@ async function deletBook(bookID) {
      const result = await fetch(`https://elibraryrestapi.herokuapp.com/elibrary/api/book/delete/${bookID}`, {
           method: 'DELETE'
      })
-     // setInterval(() => {
-     //      location.replace('books.html')
-     // },1000)
+     setInterval(() => {
+          location.replace('books.html')
+     },1000)
 }
 
 
