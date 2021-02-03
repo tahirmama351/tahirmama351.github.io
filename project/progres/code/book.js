@@ -19,7 +19,9 @@ function fetchLibraryBooks() {
                               <td> ${result[i].title}</td>
                               <td> ${result[i].overdueFee}</td>
                               <td> ${result[i].publisher}</td>
-                              <td> ${result[i].datePublished}</td>                              
+                              <td> ${result[i].datePublished}</td> 
+                              <td><a href="#child4">edit</a></td>
+                         <td><a href="#child4">delete</a></td>                             
                           </tr>`
                          console.log(result)
                          table.innerHTML += tableRow

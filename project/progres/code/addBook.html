@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cerulean/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-LV/SIoc08vbV9CCeAwiz7RJZMI5YntsH8rGov0Y2nysmepqMWVvJqds6y0RaxIXT" crossorigin="anonymous">
+            <link rel="stylesheet" l type="text/css" href="books.css">
+
+        <script defer src="addBook.js"></script>
+
+    </head>
+
+    <body>
+        <ul>
+            <li><a class="active" href="#home">The CityLibrary<sup>&reg</sup> ::: a CS418 WebApp Project</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="vertualTour.html">Vertual tuor</a></li>
+            <li><a href="aboutUs.html">About us</a></li>
+            <li style="float:right"><a href="welcomeGuest.html">Welcome, Guest</a></li>
+       </ul>
+              
+        <form>
+            <div id="reset" class="container">
+
+                <h1 id="add">Add Book  <span id="pbtdisplay" class="btn btn-success"
+                        style="display: none; margin-left: 400px; margin-right: 400px;" > Book added Successfully</span>
+                </h1>
+
+                <div class="col-md-16 mb-3">
+                    <label for="exampl">*required form fields</label><br>
+                    <label for="title">*Book Titles</label>
+                    <input type="text" class="form-control" id="title" aria-describedby="titleHelp"
+                        placeholder="Enter Titles" required>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+
+                        <label for="isbn">*ISBN</label>
+                        <input type="isbn" class="form-control" id="isbn" aria-describedby="isbnHelp"
+                            placeholder="Enter isbn">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="Overdue">*Overdue per Pay</label>
+                        <input type="text" class="form-control" id="Overdue" aria-describedby="OverduebnHelp"
+                            placeholder="Enter Overdue " required>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+
+                        <label for="Publisher">*Publisher</label>
+                        <input type="text" class="form-control" id="publisher" aria-describedby="PublisherbnHelp"
+                            placeholder="Enter Publisher" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="date">*Date Published</label>
+                        <input type="date" class="form-control" id="date" aria-describedby="isbnHelp"
+                            placeholder="Enter Date Published" required>
+                    </div>
+                </div>
+                <div>
+                    <span style="float:right;">
+                       
+                        <div class="btn-group" role="group" aria-label="Third group">
+                            <button type="button" id="save" class="btn btn-primary">Save Book</button>
+                        </div>
+                    </span>
+
+                </div>
+
+            </div>
+        </form>      
+    </body>
+</html>
