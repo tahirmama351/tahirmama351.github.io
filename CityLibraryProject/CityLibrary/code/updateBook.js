@@ -114,5 +114,5 @@ async function updatebookform(bookid) {
     }
     setTimeout(_ => {
         location.reload('books.html')
-    }, 1000)
+    }, 2000)
 }
