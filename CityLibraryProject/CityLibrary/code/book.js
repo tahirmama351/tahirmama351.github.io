@@ -7,7 +7,6 @@ fetchLibraryBooks()
 function fetchLibraryBooks() {
      fetch("https://elibraryrestapi.herokuapp.com/elibrary/api/book/list", { method: 'GET' })
           .then(response => {
-
                if (!response.ok) {
                     throw error("ERROR");
                }
