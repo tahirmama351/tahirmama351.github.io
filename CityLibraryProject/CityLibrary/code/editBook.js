@@ -62,7 +62,6 @@ async function editBookForm(bookid) {
     document.getElementById("publisher").value = result["publisher"];
     document.getElementById("publisheddata").value = result["datePublished"];
 }
-
 async function updatebookform(bookid) {
     this.event.preventDefault();
     isbn = document.getElementById("isbn").value
@@ -93,11 +92,9 @@ async function updatebookform(bookid) {
         }, 2000);
 
     } catch (error) {
-
         alert(error)
-
     }
     setTimeout(_ => {
         location.reload('books.html')
-    }, 2000)
+    }, 1000)
 }
