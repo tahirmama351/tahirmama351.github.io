@@ -25,8 +25,10 @@ function fetchLibraryBooks() {
                               <td> ${result[i].overdueFee}</td>
                               <td> ${result[i].publisher}</td>
                               <td> ${result[i].datePublished}</td> 
-                              <td><a href="editBook.html">edit</a></td>                         
-                              <td><button id="delete" onclick="deletBook(${result[i].bookId})">delete</button></td>            
+                              <td><a href="editBook.js" onclick="editBookForm(${result[i].bookId})
+                              ">edit</a></td> 
+                              <td><button id="delete" onclick="deletBook(${result[i].bookId})">delete</button></td>                    
+                                         
                           </tr>`
                          console.log(result)
                          table.innerHTML += tableRow
@@ -35,4 +37,5 @@ function fetchLibraryBooks() {
 
           }).catch(error => { console.log(error) })
 }
- 
+  
+ //<td><a href="" onclick='deletBook(${result[i].bookId})'>delet</a></td>
