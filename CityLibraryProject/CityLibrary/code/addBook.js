@@ -22,7 +22,7 @@ async function addBook() {
         "publisher": publisher,
         "datePublished": datePublished
     }
-    const resp = await fetch("https://elibraryrestapi.herokuapp.com/elibrary/api/book/add", {
+    const response = await fetch("https://elibraryrestapi.herokuapp.com/elibrary/api/book/add", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
